@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const MainNav = () => {
   const navLinkClass = ({ isActive }) =>
-    `text-base px-3 pb-2 font-medium transition-colors duration-200 flex-shrink-0 ${ 
+    `text-base px-3 pb-2 font-medium transition-colors duration-200 flex-shrink-0 cursor-pointer ${ 
       isActive
         ? 'border-b-2 border-primary text-primary'
         : 'text-dark-gray-2 hover:text-primary'

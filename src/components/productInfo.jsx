@@ -50,7 +50,7 @@ const ProductInfo = ({ product }) => {
           <div className="flex flex-wrap gap-2">
             {product.sizes.map(size => (
               <button key={size} onClick={() => setSelectedSize(size)}
-                className={`w-11 h-11 flex items-center justify-center border rounded-md transition-all text-sm ${
+                className={`w-11 h-11 flex items-center justify-center border rounded-md transition-all text-sm cursor-pointer ${
                   selectedSize === size ? 'bg-pink-600 text-white border-pink-600 font-bold' : 'bg-white text-gray-700 border-gray-300 hover:border-gray-500'
                 }`}>
                 {size}
@@ -65,7 +65,7 @@ const ProductInfo = ({ product }) => {
           <div className="flex flex-wrap gap-2">
             {product.colors.map(color => (
               <button key={color} onClick={() => setSelectedColor(color)}
-                className={`w-8 h-8 rounded-full border-2 transition-transform duration-150 transform ${
+                className={`w-8 h-8 rounded-full border-2 transition-transform duration-150 transform cursor-pointer ${
                   selectedColor === color ? 'border-pink-600 scale-110' : 'border-gray-400'
                 }`}
                 style={{ backgroundColor: color }} aria-label={`Cor ${color}`}
@@ -77,7 +77,7 @@ const ProductInfo = ({ product }) => {
 
       <button 
         onClick={handleToggleCart}
-        className={`w-72 font-bold py-2 rounded-lg mt-6 transition-colors shadow-md ${
+        className={`w-72 font-bold py-2 rounded-lg mt-6 transition-colors shadow-md cursor-pointer ${
           isProductInCart
             ? 'bg-yellow-600 text-white' // Se ESTÁ no carrinho: cor escura, sem efeito hover
             : 'bg-yellow-500 text-black hover:bg-yellow-600' // Se NÃO ESTÁ: cor clara COM o efeito hover

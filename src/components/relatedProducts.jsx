@@ -12,7 +12,7 @@ const RelatedProducts = ({ currentProduct, allProducts }) => {
     <section className="mt-16 lg:mt-24">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Produtos Relacionados</h2>
-        <Link to={`/produtos?categoria=${currentProduct.category}`} className="text-pink-600 font-semibold hover:underline">
+        <Link to={`/produtos?categoria=${currentProduct.category}`} className="text-pink-600 font-semibold hover:underline cursor-pointer">
           Ver todos →
         </Link>
       </div>

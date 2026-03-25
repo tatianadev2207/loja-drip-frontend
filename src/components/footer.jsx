@@ -21,23 +21,23 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Informação</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#">Sobre Drip Store</a></li>
-            <li><a href="#">Segurança</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Trabalhe conosco</a></li>
-            <li><a href="#">Meus Pedidos</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Sobre Drip Store</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Segurança</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Wishlist</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Blog</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Trabalhe conosco</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Meus Pedidos</a></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-4">Categorias</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#">Camisetas</a></li>
-            <li><a href="#">Calças</a></li>
-            <li><a href="#">Bonés</a></li>
-            <li><a href="#">Headphones</a></li>
-            <li><a href="#">Tênis</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Camisetas</a></li>
+            <li><a href="#" className="hover:text-pink-600 transition-colors cursor-pointer">Calças</a></li>
+            <li><a href="#"className="hover:text-pink-600 transition-colors cursor-pointer">Bonés</a></li>
+            <li><a href="#"className="hover:text-pink-600 transition-colors cursor-pointer">Headphones</a></li>
+            <li><a href="#"className="hover:text-pink-600 transition-colors cursor-pointer">Tênis</a></li>
           </ul>
         </div>
 

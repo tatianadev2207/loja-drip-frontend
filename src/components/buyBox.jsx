@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useCart } from "../contexts/cartContext";
 
+
 const BuyBox = ({
   name,
   reference,
@@ -39,7 +40,7 @@ const BuyBox = ({
 
       <button
         onClick={handleAddToCart}
-        className="bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 mt-4 rounded-xl text-base font-medium transition"
+        className="bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 mt-4 rounded-xl text-base font-medium transition cursor-pointer"
       >
         Comprar
       </button>

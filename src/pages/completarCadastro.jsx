@@ -76,7 +76,7 @@ const CompletarCadastro = () => {
                 />
                 <button
                     type="button" onClick={() => setShowPassword(!showPassword)}
-                    className="absolute inset-y-0 right-0 top-6 pr-3 flex items-center text-gray-500 hover:text-gray-700"
+                    className="absolute inset-y-0 right-0 top-6 pr-3 flex items-center text-gray-500 hover:text-gray-700 cursor-pointer"
                     aria-label="Mostrar ou ocultar senha">
                     {showPassword ? <FiEyeOff /> : <FiEye />}
                 </button>
@@ -93,13 +93,13 @@ const CompletarCadastro = () => {
           </div>
 
           <div className="pt-4">
-            <label className="flex items-center">
-              <input type="checkbox" name="receberEmails" checked={formData.receberEmails} onChange={handleChange} className="h-4 w-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500" />
+            <label className="flex items-center cursor-pointer">
+              <input type="checkbox" name="receberEmails" checked={formData.receberEmails} onChange={handleChange} className="h-4 w-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500 cursor-pointer" />
               <span className="ml-2 text-sm text-gray-600">Quero receber por email ofertas e novidades das lojas da Digital Store.</span>
             </label>
           </div>
 
-          <button type="submit" className="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-md transition-colors">
+          <button type="submit" className="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-md transition-colors cursor-pointer">
             Finalizar Cadastro
           </button>
 

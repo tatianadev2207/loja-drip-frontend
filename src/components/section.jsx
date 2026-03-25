@@ -24,7 +24,7 @@ const Section = ({
         {link && titleAlign !== 'center' && (
           <a
             href={link.href}
-            className="flex items-center gap-1 text-pink-600 hover:text-pink-700 text-sm font-medium transition ml-auto"
+            className="flex items-center gap-1 text-pink-600 hover:text-pink-700 text-sm font-medium transition ml-auto cursor-pointer"
           >
             {link.text}
             <svg

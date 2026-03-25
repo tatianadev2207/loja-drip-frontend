@@ -8,9 +8,9 @@ import RelatedProducts from '../components/relatedProducts';
 
 const Breadcrumbs = ({ product }) => (
   <nav className="flex items-center text-sm text-gray-500 mb-4">
-    <Link to="/" className="hover:text-pink-600">Home</Link>
+    <Link to="/" className="hover:text-pink-600 cursor-pointer">Home</Link>
     <FiChevronRight className="mx-2" />
-    <Link to={`/produtos?categoria=${product.category}`} className="hover:text-pink-600">
+    <Link to={`/produtos?categoria=${product.category}`} className="hover:text-pink-600 cursor-pointer">
       {product.category} {/* Exibe a categoria real do produto */}
     </Link>
     <FiChevronRight className="mx-2" />

@@ -59,8 +59,8 @@ const CartDropdown = ({ isOpen, onClose }) => {
                 <span className="font-bold text-pink-600">{formatPrice(totalValue)}</span>
               </div>
               <div className="flex justify-between items-center">
-                <button onClick={clearCart} className="text-sm text-gray-500 hover:underline">Esvaziar</button>
-                <button onClick={handleGoToCart} className="bg-pink-600 text-white font-semibold text-sm px-6 py-2 rounded-md hover:bg-pink-700">Ver Carrinho</button>
+                <button onClick={clearCart} className="text-sm text-gray-500 hover:underline cursor-pointer">Esvaziar</button>
+                <button onClick={handleGoToCart} className="bg-pink-600 text-white font-semibold text-sm px-6 py-2 rounded-md hover:bg-pink-700 cursor-pointer">Ver Carrinho</button>
               </div>
             </div>
           </>

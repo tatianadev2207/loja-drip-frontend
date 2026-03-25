@@ -38,13 +38,13 @@ const ImageGallery = ({ images }) => {
           <>
             <button 
               onClick={selectPrev} 
-              className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white focus:outline-none shadow-sm"
+              className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white focus:outline-none shadow-sm cursor-pointer"
             >
               <FiChevronLeft size={24} />
             </button>
             <button 
               onClick={selectNext} 
-              className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white focus:outline-none shadow-sm"
+              className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white focus:outline-none shadow-sm cursor-pointer"
             >
               <FiChevronRight size={24} />
             </button>
@@ -59,7 +59,7 @@ const ImageGallery = ({ images }) => {
             <button
               key={index}
               onClick={() => setSelectedIndex(index)}
-              className={`aspect-square w-full bg-gray-100 rounded-md overflow-hidden border-2 transition-all ${
+              className={`aspect-square w-full bg-gray-100 rounded-md overflow-hidden border-2 transition-all cursor-pointer ${
                 selectedIndex === index 
                   ? 'border-pink-500 shadow-md' 
                   : 'border-transparent hover:border-gray-300'

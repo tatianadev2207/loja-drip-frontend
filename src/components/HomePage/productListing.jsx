@@ -26,7 +26,7 @@ const ProductListing = ({ products }) => {
         {isHomePage && (
           <button
             onClick={handleViewAll}
-            className="text-pink-600 text-sm font-medium flex items-center gap-1 hover:text-pink-700 transition group"
+            className="text-pink-600 text-sm font-medium flex items-center gap-1 hover:text-pink-700 transition group cursor-pointer"
           >
             Ver todos
             <HiArrowNarrowRight className="text-base transform group-hover:translate-x-1 transition-transform" />
@@ -34,7 +34,7 @@ const ProductListing = ({ products }) => {
         )}
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
         {Array.isArray(products) &&
           products?.map((product, index) => (
             <ProductCard

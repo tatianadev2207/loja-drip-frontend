@@ -42,7 +42,7 @@ const Gallery = ({ images, width = '100%', height = 'auto', radius = 'xl', showT
       <button
         onClick={handlePrev}
         disabled={currentIndex === 0}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow disabled:opacity-30 z-10 transition-opacity"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow disabled:opacity-30 z-10 transition-opacity cursor-pointer"
         aria-label="Imagem anterior"
       >
         <img src={arrowLeft} alt="Anterior" className="w-6 h-6" />
@@ -52,7 +52,7 @@ const Gallery = ({ images, width = '100%', height = 'auto', radius = 'xl', showT
       <button
         onClick={handleNext}
         disabled={currentIndex === images.length - 1}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow disabled:opacity-30 z-10 transition-opacity"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow disabled:opacity-30 z-10 transition-opacity cursor-pointer"
         aria-label="Próxima imagem"
       >
         <img src={arrowRight} alt="Próxima" className="w-6 h-6" />
@@ -64,7 +64,7 @@ const Gallery = ({ images, width = '100%', height = 'auto', radius = 'xl', showT
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-200 ${
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-200 cursor-pointer ${
               currentIndex === index ? 'bg-pink-600 scale-110' : 'bg-gray-300/80'
             }`}
             aria-label={`Ir para slide ${index + 1}`}

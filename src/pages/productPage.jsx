@@ -82,7 +82,7 @@ const ProductPage = () => {
                     type="checkbox"
                     checked={filters.includes(option)}
                     onChange={() => handleFilterChange(option)}
-                    className="w-4 h-4 accent-pink-500"
+                    className="w-4 h-4 accent-pink-500 cursor-pointer"
                   />
                   {option}
                 </label>
@@ -107,7 +107,7 @@ const ProductPage = () => {
               id="order"
               value={order}
               onChange={(e) => setOrder(e.target.value)}
-              className="h-[40px] border border-gray-300 rounded px-3 text-sm focus:ring-1 focus:ring-pink-500 outline-none"
+              className="h-[40px] border border-gray-300 rounded px-3 text-sm focus:ring-1 focus:ring-pink-500 outline-none cursor-pointer"
             >
               <option value="menor-preco">Menor preço</option>
               <option value="maior-preco">Maior preço</option>
@@ -119,7 +119,7 @@ const ProductPage = () => {
 
         <div className="flex justify-end mt-10 w-full border-t pt-6">
           <Link to="/pedidos" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto px-8 py-3 bg-pink-700 hover:bg-pink-800 text-white font-semibold rounded shadow-md transition-all active:scale-95">
+            <button className="w-full sm:w-auto px-8 py-3 bg-pink-700 hover:bg-pink-800 text-white font-semibold rounded shadow-md transition-all active:scale-95 cursor-pointer">
               Ir para o carrinho
             </button>
           </Link>

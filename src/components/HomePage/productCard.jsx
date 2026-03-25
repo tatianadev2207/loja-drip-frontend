@@ -69,7 +69,7 @@ const ProductCard = ({ product = {} }) => {
 
         <button
           onClick={handleCartClick}
-          className={`mt-2 py-1 px-3 rounded text-sm transition font-semibold w-full ${
+          className={`mt-2 py-1 px-3 rounded text-sm transition font-semibold w-full cursor-pointer ${
             isInCart
               ? "bg-green-500 text-white hover:bg-green-600"
               : "bg-primary text-white hover:brightness-110"
@@ -81,7 +81,7 @@ const ProductCard = ({ product = {} }) => {
 
         <button
           onClick={handleViewMore}
-          className="text-sm px-3 py-1 rounded bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 mt-1"
+          className="text-sm px-3 py-1 rounded bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 mt-1 cursor-pointer"
         >
           Ver mais
         </button>

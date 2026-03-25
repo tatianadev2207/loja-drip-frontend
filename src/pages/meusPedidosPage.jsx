@@ -62,7 +62,7 @@ const MeusPedidosPage = () => {
                 </div>
                 <button
                   onClick={() => setItemToDelete(index)}
-                  className="text-red-600 hover:text-red-800 font-medium"
+                  className="text-red-600 hover:text-red-800 font-medium cursor-pointer"
                 >
                   Excluir
                 </button>
@@ -77,7 +77,7 @@ const MeusPedidosPage = () => {
           <div className="mt-6 flex justify-end">
             <button
               onClick={() => setShowPaymentOptions(true)}
-              className="px-6 py-3 bg-pink-700 text-white rounded hover:bg-pink-900"
+              className="px-6 py-3 bg-pink-700 text-white rounded hover:bg-pink-900 cursor-pointer"
             >
               Finalizar Pedido
             </button>
@@ -91,7 +91,7 @@ const MeusPedidosPage = () => {
               <div className="bg-white p-6 rounded shadow-lg max-w-sm w-full text-center relative">
                 <button
                   onClick={() => setItemToDelete(null)}
-                  className="absolute top-2 right-3 text-gray-400 text-lg hover:text-gray-600"
+                  className="absolute top-2 right-3 text-gray-400 text-lg hover:text-gray-600 cursor-pointer"
                 >
                   ×
                 </button>
@@ -99,13 +99,13 @@ const MeusPedidosPage = () => {
                 <div className="flex justify-center gap-4">
                   <button
                     onClick={handleDelete}
-                    className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                    className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 cursor-pointer"
                   >
                     Sim
                   </button>
                   <button
                     onClick={() => setItemToDelete(null)}
-                    className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-200"
+                    className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-200 cursor-pointer"
                   >
                     Não
                   </button>
@@ -122,7 +122,7 @@ const MeusPedidosPage = () => {
               <div className="bg-white p-6 rounded shadow-lg max-w-sm w-full text-center relative">
                 <button
                   onClick={() => setShowPaymentOptions(false)}
-                  className="absolute top-2 right-3 text-gray-400 text-lg hover:text-gray-600"
+                  className="absolute top-2 right-3 text-gray-400 text-lg hover:text-gray-600 cursor-pointer"
                 >
                   ×
                 </button>
@@ -130,26 +130,26 @@ const MeusPedidosPage = () => {
                 <div className="flex flex-col gap-3">
                   <button
                     onClick={handleSimulatePayment}
-                    className="flex items-center justify-center gap-2 bg-cyan-900 text-white px-4 py-2 rounded hover:bg-cyan-950"
+                    className="flex items-center justify-center gap-2 bg-cyan-900 text-white px-4 py-2 rounded hover:bg-cyan-950 cursor-pointer"
                   >
                     <FaQrcode /> Pix
                   </button>
                   <button
                     onClick={handleSimulatePayment}
-                    className="flex items-center justify-center gap-2 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+                    className="flex items-center justify-center gap-2 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 cursor-pointer"
                   >
                     <FaCreditCard /> Cartão de Crédito
                   </button>
                   <button
                     onClick={handleSimulatePayment}
-                    className="flex items-center justify-center gap-2 bg-green-900 text-white px-4 py-2 rounded hover:bg-green-950"
+                    className="flex items-center justify-center gap-2 bg-green-900 text-white px-4 py-2 rounded hover:bg-green-950 cursor-pointer"
                   >
                     <FaMoneyBillAlt /> Dinheiro
                   </button>
                 </div>
                 <button
                   onClick={() => setShowPaymentOptions(false)}
-                  className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                  className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 cursor-pointer"
                 >
                   Cancelar
                 </button>

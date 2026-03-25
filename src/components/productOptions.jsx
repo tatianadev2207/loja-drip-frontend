@@ -21,6 +21,7 @@ const ProductOptions = ({ options, radius, shape, type }) => {
             lineHeight: shape === 'square' ? '46px' : '31px',
             fontSize: type === 'text' ? '24px' : '0',
             color: type === 'text' ? 'darkgray' : 'transparent',
+            cursor: 'pointer',
           }}
         >
           {type === 'text' && option}

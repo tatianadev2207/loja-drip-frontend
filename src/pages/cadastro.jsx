@@ -34,7 +34,7 @@ const Cadastro = () => {
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Já possui uma conta?{' '}
-            <Link to="/login" className="font-medium text-primary hover:text-pink-500">
+            <Link to="/login" className="font-medium text-primary hover:text-pink-500 cursor-pointer">
               Faça o login
             </Link>
           </p>
@@ -82,7 +82,7 @@ const Cadastro = () => {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 hover:text-gray-700"
+                className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 hover:text-gray-700 cursor-pointer"
                 aria-label="Mostrar ou ocultar senha"
               >
                 {showPassword ? <FiEyeOff /> : <FiEye />}
@@ -93,7 +93,7 @@ const Cadastro = () => {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary cursor-pointer"
             >
               Criar Conta
             </button>

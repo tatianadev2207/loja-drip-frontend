@@ -30,7 +30,7 @@ const SearchBar = () => {
       />
       <button
         onClick={handleSearch}
-        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-pink-600 transition"
+        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-pink-600 transition cursor-pointer"
         aria-label="Buscar"
       >
         <FiSearch className="text-lg" />

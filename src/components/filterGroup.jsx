@@ -10,9 +10,9 @@ const FilterGroup = ({ title, inputType, options }) => {
             id={option.value || option.text}
             name={title}
             value={option.value || option.text}
-            className="w-[22px] h-[22px] mr-2"
+            className="w-[22px] h-[22px] mr-2 cursor-pointer"
           />
-          <label htmlFor={option.value || option.text} className="text-dark-gray-2">
+          <label htmlFor={option.value || option.text} className="text-dark-gray-2 cursor-pointer">
             {option.text}
           </label>
         </div>

@@ -66,7 +66,7 @@ const ProductListingPage = () => {
           </label>
           <select
             id="order-select"
-            className="w-full h-[48px] border border-gray-300 rounded px-3 text-gray-700"
+            className="w-full h-[48px] border border-gray-300 rounded px-3 text-gray-700 cursor-pointer"
             value={order}
             onChange={e => setOrder(e.target.value)}
           >
@@ -83,9 +83,9 @@ const ProductListingPage = () => {
                   id={value}
                   checked={filters.includes(value)}
                   onChange={() => handleFilterChange(value)}
-                  className="w-5 h-5 accent-pink-600 mr-2"
+                  className="w-5 h-5 accent-pink-600 mr-2 cursor-pointer"
                 />
-                <label htmlFor={value} className="text-gray-700 text-sm">{text}</label>
+                <label htmlFor={value} className="text-gray-700 text-sm cursor-pointer">{text}</label>
               </div>
             ))}
           </div>

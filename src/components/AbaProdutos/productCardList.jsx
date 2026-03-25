@@ -38,7 +38,7 @@ const ProductCardList = ({ id, image, name, category, price, priceDiscount, full
   return (
     // A estrutura principal do card permanece a mesma
     <div className="bg-white border border-gray-200 rounded-lg shadow-md flex flex-col justify-between transition-shadow hover:shadow-xl">
-      <Link to={`/produto/${id}`} className="block relative">
+      <Link to={`/produto/${id}`} className="block relative cursor-pointer">
         {hasDiscount && (
           <div className="absolute top-3 left-3 bg-green-200 text-green-800 text-xs font-bold px-3 py-1 rounded-md z-10">
             {discountPercentage}% OFF
@@ -73,7 +73,7 @@ const ProductCardList = ({ id, image, name, category, price, priceDiscount, full
         <button 
           onClick={handleToggleCart} // Usa a nova função
           // As classes de estilo mudam com base no estado do carrinho
-          className={`w-full text-white font-bold py-2 rounded-lg transition mb-2 ${
+          className={`w-full text-white font-bold py-2 rounded-lg transition mb-2 cursor-pointer ${
             isProductInCart
               ? 'bg-green-600 hover:bg-green-700' // Estilo VERDE quando está no carrinho
               : 'bg-pink-600 hover:bg-pink-700'   // Estilo ROSA quando não está
@@ -84,7 +84,7 @@ const ProductCardList = ({ id, image, name, category, price, priceDiscount, full
         </button>
         <Link
           to={`/produto/${id}`}
-          className="w-full block text-center bg-gray-200 text-gray-800 font-bold py-2 rounded-lg hover:bg-gray-300 transition"
+          className="w-full block text-center bg-gray-200 text-gray-800 font-bold py-2 rounded-lg hover:bg-gray-300 transition cursor-pointer"
         >
           Ver mais
         </Link>

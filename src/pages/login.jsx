@@ -52,7 +52,7 @@ const Login = () => {
               </h2>
               <p className="mt-2 text-sm text-gray-600">
                 Novo cliente? Então registre-se{' '}
-                <Link to="/register" className="font-semibold text-pink-600 hover:underline">
+                <Link to="/register" className="font-semibold text-pink-600 hover:underline cursor-pointer">
                   aqui
                 </Link>
               </p>
@@ -80,19 +80,19 @@ const Login = () => {
                   placeholder="Insira sua senha"
                 />
                 <button type="button" onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 top-7 pr-3 flex items-center text-gray-500 hover:text-gray-700">
+                  className="absolute inset-y-0 right-0 top-7 pr-3 flex items-center text-gray-500 hover:text-gray-700 cursor-pointer">
                   {showPassword ? <FiEyeOff /> : <FiEye />}
                 </button>
               </div>
 
               <div className="text-right text-sm">
-                <a href="#" className="font-medium text-pink-600 hover:underline">
+                <a href="#" className="font-medium text-pink-600 hover:underline cursor-pointer">
                   Esqueci minha senha
                 </a>
               </div>
 
               <div>
-                <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 cursor-pointer">
                   Acessar Conta
                 </button>
               </div>
@@ -103,9 +103,9 @@ const Login = () => {
               </div>
               
               <div className="flex justify-center gap-4">
-                <button type="button" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"><FcGoogle size={20} /></button>
-                <button type="button" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"><FaFacebook size={20} className="text-blue-600" /></button>
-                <button type="button" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"><FaMicrosoft size={20} className="text-sky-500" /></button>
+                <button type="button" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"><FcGoogle size={20} /></button>
+                <button type="button" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"><FaFacebook size={20} className="text-blue-600" /></button>
+                <button type="button" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"><FaMicrosoft size={20} className="text-sky-500" /></button>
               </div>
             </form>
           </div>
